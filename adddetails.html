@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome WTF</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="auther" content="Pratik Kumar">
+<meta name="auther" content="Pratik Kumar">
+<link href="bs/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="template.css">
+<script src="bs/jquery.js"></script> 
+ <script src="bs/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container"> 
+	<!--  did,sid,scid,iid,title,originalprice,discount,features,otheedetails,instock, homedelivery,validupto,refund,views,warranty,timestamp,orderd,bigdeal,cod-->
+
+	<div id="row">
+	<div class="col-md-12 register"> 
+    <form class="form-horizontal" role="form" action="savedeal.php" method="GET"> 
+		
+		<div class="form-group"> 
+			<label for="sid" class="col-sm-2 control-label">Shop ID</label> 
+				<div class="col-sm-10"> 
+					<input type="text" class="form-control" name="sid" id="sid" placeholder="Enter Id of The Shop"> 
+				</div> 
+			</div> 
+			<div class="form-group"> 
+				<label for="iid" class="col-sm-2 control-label">Subcategory</label> 
+					<div class="col-sm-10"> 
+						<select class="form-control" name="scid">
+						<option value="1">Top city deals</option> 
+						<option value="2">Deal of the day</option> 
+						<option value="3">Past deals</option>
+						<option value="4">Most bought deals</option>
+						<option value="5">Mobiles/gadgets/accessories</option>
+						<option value="6">Computer asscessories</option>
+						<option value="7">Gaming</option>
+						<option value="8">Home and Kitchen appliances</option>
+						<option value="9">Camera</option>
+						<option value="10">Cakes</option>
+						<option value="11">Flowers</option>
+						<option value="12">Chocolates</option>
+					    <option value="13">Special occasions combos</option> 
+						<option value="14">Apparels</option>
+						<option value="15">Beauty And Wellness</option>
+						<option value="16">Dental</option>
+						<option value="17">Fitness</option>
+						<option value="18">Fragrance</option>
+						<option value="19">Books</option>
+						<option value="20">Stationary</option>
+						<option value="21">Holiday packages</option>
+						<option value="22">Sports</option>
+						</select>
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="iid" class="col-sm-2 control-label">Image ID</label> 
+					<div class="col-sm-10"> 
+						<input type="text" class="form-control" name="iid" id="iid" placeholder="Enter Id OF the Image of the Deal"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="title" class="col-sm-2 control-label">Title</label> 
+					<div class="col-sm-10"> 
+						<input type="" class="form-control" name="title" id="title" placeholder="Enter Title of The Deal"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="op" class="col-sm-2 control-label">Original Price</label> 
+					<div class="col-sm-10"> 
+						<input type="" class="form-control" id="op" name="op" placeholder="Enter Original Price Of The Deal"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="country" class="col-sm-2 control-label">Home Delivery</label> 
+					<div class="col-sm-10"> 
+						<select class="form-control" name="hd">
+						<option value="1">Yes</option> 
+						<option value="0">No</option>  
+						</select>
+					</div>
+			</div>
+			<div class="form-group"> 
+				<label for="discount" class="col-sm-2 control-label">Price</label> 
+					<div class="col-sm-10"> 
+						<input type="text" class="form-control" name="discount" id="discount" placeholder="Enter Discunt offered i=on the deal"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="features" class="col-sm-2 control-label">Features</label> 
+					<div class="col-sm-10"> 
+						<input type="password" class="form-control" id="features" name="features" placeholder="Enter features of the deal"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="od" class="col-sm-2 control-label">Other Details</label> 
+					<div class="col-sm-10"> 
+						<input type="text" class="form-control" id="od" name="od" placeholder="Enter oter details"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="instock" class="col-sm-2 control-label">Instock</label> 
+					<div class="col-sm-10"> 
+						<input type="password" class="form-control" id="instock" name="instock" placeholder="Enter the quantity available"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="vp" class="col-sm-2 control-label">Valid Upto</label> 
+					<div class="col-sm-10"> 
+						<input type="date" class="form-control"  name="vp" id="vp" placeholder="Enter the Expiry date"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="refund" class="col-sm-2 control-label">Refundable</label> 
+					<div class="col-sm-10"> 
+						<input type="text" class="form-control" id="refund" name="refund" placeholder="Is Refundable?"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="warranty" class="col-sm-2 control-label">Warranty</label> 
+					<div class="col-sm-10"> 
+						<input type="text" class="form-control" id="warranty"  name="warranty" placeholder="Enter  More Street detail"> 
+					</div> 
+			</div>
+			<div class="form-group"> 
+				<label for="stae" class="col-sm-2 control-label">Bigdeal</label> 
+					<div class="col-sm-10"> 
+						<select class="form-control" name="bigdeal">
+							<option value="1">Yes</option> 
+							<option value="0">No</option>  
+						</select>
+					</div>
+			</div>
+			<div class="form-group"> 
+				<label for="country" class="col-sm-2 control-label">COD</label> 
+					<div class="col-sm-10"> 
+						<select class="form-control" name="cod">
+						<option value="1">Yes</option> 
+						<option value="0">No</option>  
+						</select>
+					</div>
+			</div>
+			<div class="form-group"> 
+				<label class="col-sm-2 control-label">Views</label> 
+				<div class="col-sm-10"> 
+					<input type="text" class="form-control" id="warranty"  name="views" value="0"> 
+
+				</div> 
+			</div>
+			<div class="form-group"> 
+				<label class="col-sm-2 control-label">ordered</label> 
+				<div class="col-sm-10"> 
+					<input type="text"  class="form-control" id="warranty"  name="orderd" value="0"> 
+
+				</div> 
+			</div>
+			<div class="form-group"> 
+				<div class="col-sm-offset-2 col-sm-10"> 
+					<button type="submit" class="btn btn-success">Save Deal</button> 
+				</div> 
+			</div>
+		</form>
+	</div>
+	</div>
+	</div>
+
+	</div>
+
+</body>
+</html>
